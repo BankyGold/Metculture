@@ -4,13 +4,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Copy only necessary files (exclude Dockerfile, .git, etc.)
-COPY index.html ./
-
-# Remove default Nginx config (optional)
-RUN rm /etc/nginx/conf.d/default.conf
-
-# Custom Nginx config (optional)
-COPY nginx-custom.conf /etc/nginx/conf.d/
+COPY index.html
 
 EXPOSE 80
 
