@@ -1,10 +1,13 @@
 {
-     "name": "metculture-agency",
-     "version": "1.0.0",
-     "scripts": {
-       "start": "npx serve -s"
-     },
-     "dependencies": {
-       "serve": "^14.2.0"
-     }
-   }
+  "name": "metculture-agency",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx serve -s"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+- },
+- "engines": {
+-   "node": ">=16"
+  }
+}
