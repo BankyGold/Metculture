@@ -4,7 +4,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Copy only necessary files (exclude Dockerfile, .git, etc.)
-COPY index.html
+COPY index.html ./
 
 EXPOSE 80
 
