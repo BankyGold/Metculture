@@ -5,9 +5,6 @@ WORKDIR /usr/share/nginx/html
 
 # Copy only necessary files (exclude Dockerfile, .git, etc.)
 COPY index.html ./
-COPY css/ ./css/
-COPY js/ ./js/
-COPY images/ ./images/
 
 # Remove default Nginx config (optional)
 RUN rm /etc/nginx/conf.d/default.conf
